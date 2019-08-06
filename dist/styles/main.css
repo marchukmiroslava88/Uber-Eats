@@ -221,7 +221,7 @@ table {
     font-size: 1rem; }
 
 .address-icon {
-  background: url("../../images/mark.png") no-repeat 10px;
+  background: url("../images/mark.png") no-repeat 10px;
   padding-left: 35px; }
 
 .btn {
@@ -256,7 +256,7 @@ table {
       background-color: #404040; }
 
 .btn-select {
-  background: #3b3b3b url("../../images/world.svg") no-repeat 15px center;
+  background: #3b3b3b url("../images/world.svg") no-repeat 15px center;
   background-size: 16px;
   max-width: 227px;
   -webkit-transition: background-color 0.3s;
@@ -267,7 +267,7 @@ table {
     padding: 10px 10px 10px 47px;
     text-transform: uppercase;
     width: 100%;
-    background: transparent url(../../images/arrow-down.svg) no-repeat 96% 16px;
+    background: transparent url(../images/arrow-down.svg) no-repeat 96% 16px;
     border-radius: 2px;
     color: white;
     font-size: 13px;
@@ -350,7 +350,7 @@ table {
   .search-field {
     border: none;
     border-bottom: 1px solid rgba(117, 117, 117, 0.3);
-    background: url("../../images/search.svg") no-repeat 0 15px;
+    background: url("../images/search.svg") no-repeat 0 15px;
     padding: 18px 30px;
     font-size: 1rem;
     -webkit-box-sizing: border-box;
