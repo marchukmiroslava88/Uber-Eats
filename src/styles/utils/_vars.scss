@@ -1,1 +1,40 @@
-$c-gray: #eee;
+/*
+ ## Grid
+*/
+
+$base-col-width: 100%;
+$base-rows-indent: 15px;
+
+/*
+ ## Colors
+*/
+
+$palette-primary: (
+  blak : #1d1d1d,
+  gray-darken: #262626,
+  gray-lighten: #3b3b3b,
+);
+
+$palette-secondary: (
+  light : #fff,
+  green-darken: #49a144,
+  green-lighten: #59bd5a,
+);
+
+$primary-color: map-get($palette-primary, gray-darken);
+$secondary-color: map-get($palette-primary, gray-lighten);
+$success-color: map-get($palette-secondary, green-lighten);
+
+$text-color: map-get($palette-primary, blak);
+$text-color-secondary: map-get($palette-primary, gray-lighten);
+
+$link-color: map-get($palette-secondary, light);
+$tags-color: map-get($palette-secondary, green-darken);
+
+/*
+ ## Font, line-height, font-size
+*/
+
+$fz-xs: 11px;
+$fz-sm: 13px;
+$fz-md: 14px;

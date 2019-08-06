@@ -1,0 +1,146 @@
+@mixin sm-media {
+  .header {
+    padding: 16px 0;
+  }
+
+  .header__delivery {
+    display: none;
+  }
+
+  .form__group {
+    flex-direction: column;
+    align-items: self-end;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .mobile-show {
+    display: flex;
+  }
+
+  .header__cart {
+    display: none;
+  }
+
+  .btn {
+    width: 72px;
+  }
+
+  .header__auth .btn:first-child {
+    margin-right: 5px;
+  }
+
+  .header__auth .btn:last-child {
+    margin-right: 0;
+  }
+
+  .search {
+    padding-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  .search-field {
+    background-size: 18px;
+    padding: 16px 24px 20px;
+    font-size: $fz-sm;
+  }
+
+  .form__text {
+    text-transform: capitalize;
+    font-size: $fz-xs;
+    line-height: 13px;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+
+  .form__control--sm {
+    width: 65px;
+  }
+
+  .form__control--lg {
+    width: 100%;
+  }
+
+  .delivery-form-mobile {
+    margin-bottom: 40px;
+    width: 100vw;
+
+    .form__group:first-child {
+      margin-right: 16px;
+    }
+
+    .form__group:nth-child(2) {
+      width: 100%;
+    }
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+  }
+
+  .card__photo {
+    max-height: 246px;
+  }
+
+  .footer__social.social {
+    margin-bottom: 28px;
+  }
+
+  .footer__list-link {
+    padding-left: 0;
+
+    &.pl-5 {
+      padding-left: 0;
+    }
+  }
+
+  .footer__app {
+    margin: 23px 0 21px 16px;
+  }
+
+  .footer__app-link {
+    max-width: 107px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .footer__app-link:first-child {
+    margin-right: 25px;
+  }
+
+  .footer__app-link:nth-child(2) {
+    max-width: 124px;
+  }
+
+  .footer__bottom-text {
+    margin-bottom: 11px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+
+    &-text--link {
+      padding-left: 0;
+
+      &.pl-5 {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .footer__wrap {
+    padding-bottom: 15px;
+  }
+
+  .scroll_top {
+    line-height: 76px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
