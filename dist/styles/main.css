@@ -392,7 +392,8 @@ table {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
   .container {
-    padding: 0 7px; }
+    padding: 0 7px; 
+    max-width: 754px;}
   .header {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
@@ -430,6 +431,8 @@ table {
     right: 16px; } }
 
 @media (max-width: 639px) {
+  .container {
+    max-width: 340x;}
   .col {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
