@@ -16,11 +16,14 @@
           </a>
           <form class="header__delivery form" action="#">
             <div class="form__group">
-              <input class="form__control form__control--sm" type="text"  name="deliveryTime" value="asap">
+              <select class="form__control form__control--sm" name="deliveryTime">
+                <option selected="">asap</option>
+                <option></option>
+              </select>
             </div>
             <div class="form__group">
               <label for="deliveryAddress" class="form__text">to</label>
-              <input class="form__control form__control--lg address-icon" type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Введите адрес доставки" value="ul. Tarasivska St, 16 ">
+              <input class="form__control form__control--lg address-icon" type="text" id="deliveryAddress" name="deliveryAddress" placeholder="ul. Tarasivska St, 16">
             </div>
           </form>
           <div class="header__actions">
@@ -44,13 +47,16 @@
 
     <div class="container mobile-show">
       <form class="form delivery-form-mobile" action="#">
-        <div class="form__group">
+       <div class="form__group">
           <label for="deliveryTime" class="form__text">when</label>
-          <input class="form__control form__control--sm" type="text" id="deliveryTime" name="deliveryTime" value="asap">
+          <select class="form__control form__control--sm" name="deliveryTime" id="deliveryTime">
+            <option selected="">asap</option>
+            <option></option>
+          </select>
         </div>
         <div class="form__group">
           <label for="deliveryAddressMobile" class="form__text">to</label>
-          <input class="form__control form__control--lg address-icon" type="text" id="deliveryAddressMobile" name="deliveryAddress" placeholder="Введите адрес доставки" value="ul. Tarasivska St, 16 ">
+          <input class="form__control form__control--lg address-icon" type="text" id="deliveryAddressMobile" name="deliveryAddress" placeholder="ul. Tarasivska St, 16">
         </div>
       </form>
     </div>
