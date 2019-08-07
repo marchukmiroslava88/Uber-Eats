@@ -211,8 +211,11 @@ table {
     letter-spacing: -0.1px; }
     .form__control--sm {
       width: 65px;
-      text-align: center;
-      text-transform: uppercase; }
+      padding: 7px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;}
     .form__control--lg {
       width: 292px; }
   .form__text {
