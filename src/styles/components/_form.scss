@@ -20,8 +20,11 @@
 
     &--sm {
       width: 65px;
-      text-align: center;
+      padding: 7px 10px;
       text-transform: uppercase;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
     }
 
     &--lg {
