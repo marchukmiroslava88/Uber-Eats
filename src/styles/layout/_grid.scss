@@ -1,0 +1,53 @@
+@import "../media/sm-display";
+@import "../media/md-display";
+
+.container {
+  max-width: 956px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.col {
+  flex-basis: $base-col-width/3;
+  max-width: 100%;
+}
+
+$grid-breakpoints: (
+  md: 1023px,
+  sm: 639px
+);
+
+$columns-width: (
+  md: $base-col-width/2,
+  sm: $base-col-width
+);
+
+@mixin media($max, $columns-width) {
+  @media (max-width: $max ) {
+    .col {
+      flex-basis: $columns-width;
+    }
+    @content;
+  }
+}
+
+@each $key,$breakpoint in $grid-breakpoints {
+  $column-width: map-get($columns-width, $key);
+  @include media($breakpoint, $column-width) {
+
+    @if ($key == sm) {
+      @include sm-media;
+    }
+
+    @else if ($key == md) {
+      @include md-media;
+    }
+  }
+}

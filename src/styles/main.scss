@@ -1,7 +1,21 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "base/fonts";
+@import "base/typography";
+@import "base/common";
+@import "../../node_modules/reset-css/sass/reset";
+@import "layout/header";
+@import "layout/footer";
+@import "components/form";
+@import "components/buttons";
+@import "components/card";
+@import "components/search";
+@import "components/social";
+@import "components/divider";
+@import "layout/grid";
+@import "base/spacing";
 
 body {
-  background: $c-gray;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }

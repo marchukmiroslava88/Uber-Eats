@@ -1,0 +1,17 @@
+.search {
+  flex-basis: 100%;
+  color: $text-color-secondary;
+  opacity: 0.5;
+  margin-bottom: 57px;
+  padding-top: 25px;
+
+  &-field {
+    border: none;
+    border-bottom: 1px solid rgba(117,117,117,0.3);
+    background: url("../../images/search.svg") no-repeat 0 15px;
+    padding: 18px 30px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

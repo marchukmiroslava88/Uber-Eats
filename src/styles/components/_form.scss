@@ -1,0 +1,45 @@
+.form {
+  @extend %flex-center;
+  color: $text-color;
+
+  &__group {
+    position: relative;
+    @extend %flex-center;
+  }
+  &__control {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    padding: 7px 0;
+    line-height: 24px;
+    width: 100%;
+    color: $text-color-secondary;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+    letter-spacing: -0.1px;
+
+    &--sm {
+      width: 65px;
+      padding: 7px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    &--lg {
+      width: 292px;
+    }
+  }
+
+  &__text {
+    color: $text-color-secondary;
+    padding: 0 9px;
+    font-size: 1rem;
+  }
+}
+
+.address-icon {
+  background: url("../../images/mark.png") no-repeat 10px;
+  padding-left: 35px;
+}

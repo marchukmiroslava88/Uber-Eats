@@ -1,0 +1,75 @@
+.btn {
+  font-size: $fz-sm;
+  line-height: 24px;
+  padding: 7px;
+  width: 80px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &-light {
+    color: $text-color;
+    border-color: #e0e0e0;
+    margin-right: 12px;
+    @include hover(background-color, darken(#fff, 10%));
+  }
+
+  &-dark {
+    background: $primary-color;
+    color: $link-color;
+    border-color: $primary-color;
+    margin-right: 16px;
+    @include hover(background-color, lighten($primary-color, 10%));
+  }
+}
+
+.btn-select {
+  background: $secondary-color url("../../images/world.svg") no-repeat 15px center;
+  background-size: 16px;
+  max-width: 227px;
+
+  @include hover(background-color, lighten($secondary-color, 10%));
+
+  select {
+    padding: 10px 10px 10px 47px;
+    text-transform: uppercase;
+    width: 100%;
+    background: transparent url(../../images/arrow-down.svg) no-repeat 96% 16px;
+    border-radius: 2px;
+    color: white;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: -0.3px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none;
+
+  }
+
+  select option {
+    background-color: $secondary-color;
+    color: $link-color;
+  }
+}
+
+.scroll_top {
+  position: absolute;
+  text-align: center;
+  line-height: 90px;
+  width: 80px;
+  height: 80px;
+  color: $link-color;
+  background-color: $success-color;
+  z-index: 1;
+  bottom: 24px;
+  right: 6px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+

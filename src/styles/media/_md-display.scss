@@ -1,0 +1,72 @@
+@mixin md-media {
+  .container {
+    padding: 0 7px;
+    max-width: 754px;
+  }
+
+  .header {
+    justify-content: initial;
+
+    &__logo {
+      height: 12.5px;
+    }
+
+    &__delivery {
+      margin-left: 23px;
+    }
+
+    &__actions {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  .form__control {
+    font-size: $fz-sm;
+
+    &--sm {
+      width: 55px;
+    }
+
+    &--lg {
+      width: 215px;
+    }
+  }
+
+  .card-title {
+    letter-spacing: 0;
+  }
+
+  .card-list {
+    margin-bottom: 32px;
+    margin-right: -7px;
+  }
+
+  .card {
+    width: calc(100% - 7px);
+  }
+
+  .footer__localization {
+    margin-right: 0;
+  }
+
+  .btn-select {
+    max-width: 176px;
+  }
+
+  .footer__tag {
+    margin-bottom: 15px;
+  }
+
+  .social__link {
+    margin-right: 8px;
+  }
+
+  .footer__app {
+    margin-left: 14px;
+  }
+
+  .scroll_top {
+    right: 16px;
+  }
+}
+
